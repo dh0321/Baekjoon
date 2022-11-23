@@ -11,7 +11,7 @@ int main()
 
 	cin >> a >> b >> c;
 
-	if (a == b && b == c && a == c)
+	if (a == b && b == c)
 	{
 		result = 10000 + a * 1000;
 		cout << result << endl;
