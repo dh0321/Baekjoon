@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
 	int n, x;
-	int a[100];
+	int a[10000]; //X가 <= 10000이므로 배열 붐위도 10000으로 해야 에러x
 
 	cin >> n >> x;
 
