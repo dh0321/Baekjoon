@@ -21,7 +21,6 @@ int main(){
 		}
 	}
 	
-	cout << min << " " << max << "\n";
-	
+	cout << min << " " << max << endl;
 	return 0;
 }
