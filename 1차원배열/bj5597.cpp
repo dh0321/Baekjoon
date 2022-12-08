@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-	int array[31];
+	int array[31] = {0};
 	int n;
 
 	for (int i = 0; i < 28; i++)
