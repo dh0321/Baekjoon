@@ -1,27 +1,24 @@
 #include <iostream>
- 
 using namespace std;
- 
-int main(int argc, const char * argv[]) {
-  
-	int count[42] = {};	
-	
-	int v;
-	for(int i = 0; i < 10; i++) {
-		cin >> v;
-		count[v % 42]++;	
-	}
- 
-	int result = 0;
 
-	for(int v : count) {
-		if(v > 0) {		
-			result++;
+int main() {
+
+	int n, count = 0;
+	int array[42] = {0};
+
+	for (int i = 0; i < 10; i++) {
+		cin >> n;
+		array[n % 42]++;
+	}
+
+	for (int i = 0; i < 42; i++) {
+		if (array[i] != 0)
+		{
+			count++;
 		}
 	}
-	cout << result;
- 
+
+	cout << count << endl;
+
 	return 0;
- 
- 
 }
