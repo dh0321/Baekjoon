@@ -5,7 +5,7 @@ int hansoo(int num) {
 	int count = 0;
 	
 	if (num < 100) {
-		return num;
+		count = num;
 	}
 
 	else {
@@ -20,8 +20,8 @@ int hansoo(int num) {
 				count++;
 			}
 		}
-		return count;
 	}
+	return count;
 }
 
 
