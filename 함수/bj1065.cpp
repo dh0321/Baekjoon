@@ -1,38 +1,34 @@
 #include <iostream>
 using namespace std;
-
+ 
 int hansoo(int num) {
 	int count = 0;
-	
+ 
 	if (num < 100) {
-		count = num;
-	}
-
+		return num;
+	} 
 	else {
 		count = 99;
-
-		for (int i = 100; i < num; i++) {
-			int third = i / 100;
-			int second = (i % 100) / 10;
-			int first = (i % 100) % 10;
-
-			if ((third - second) == (second - first)) {
+ 
+		for (int i = 100; i <= num; i++) {
+			int hund = i / 100;		 
+			int ten = (i / 10) % 10; 
+			int one = i % 10;
+ 
+			if ((hund - ten) == (ten - one)) { 
 				count++;
 			}
 		}
 	}
 	return count;
 }
-
-
+ 
 int main() {
-
+ 
 	int n;
 	cin >> n;
-
+ 
 	int result = hansoo(n);
-	cout << result << endl;
-
+	cout << result;
 	return 0;
-
 }
