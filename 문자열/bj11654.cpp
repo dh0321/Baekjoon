@@ -1,11 +1,11 @@
 #include <iostream>
-
 using namespace std;
 
-int main(void) {
-	char c;
 
-	cin >> c;
-	cout << (int)c << endl;
+int main() {
+	char a;
+	cin >> a;
+	cout << (int)a << endl;
+
 	return 0;
 }
