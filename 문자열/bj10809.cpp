@@ -14,11 +14,13 @@ int main() {
 	}
 
 	for (int i = 0; i < word.length(); i++) {
+		if (alpha[word[i] - 97] == -1) {
+			alpha[word[i] - 97] = i;
+		}
+	}
 
-    
-    
-    
-    
+	for (int i = 0; i < 26; i++) {
+		cout << alpha[i] << " ";
 	}
 
 	return 0;
